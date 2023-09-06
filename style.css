@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color:rgb(230, 212, 185);
+}
+
+/* Navigation Bar styling */
+
+.navbar {
+  background-color: rgb(0, 0, 100);
+  position: sticky;
+  top: 0px;
+  right: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.402);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar>h1 {
+  padding: 0.5rem 3rem;
+  cursor: pointer;
+  color: white;
+}
+.navbar>a {
+  text-decoration: none;
+  padding: 2vh 3vw;
+  font-size: 3vmin;
+  border-bottom: 5px solid rgb(0, 0, 100);
+  transition: all 0.5s;
+  color: white;
+}
+
+.navbar>a:hover {
+  background-color:  rgba(230, 212, 185, 0.86);
+  color: rgb(0, 0, 100);
+}
+
+/* Styling the Main Content */
+
+.container {
+  width: 70%;
+  margin: auto;
+  padding: 3vw 8vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin: 4vh 0;
+  align-self: center;
+}
+
+input, textarea, button[type='submit'] {
+  padding: 1vh 1vw;
+  margin: 1vh 2vw;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  font-family: sans-serif;
+  outline: none;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  
+}
+
+button[type='submit'] {
+  background-color: rgb(0, 0, 100);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s;
+  border: 3px solid rgb(0,0,100);
+}
+
+button[type='submit']:hover {
+  background-color:  rgb(230, 212, 185);
+  color: rgb(0, 0, 100);
+}
+
+.task {
+  background-color: rgba(0,0,100,0.1);
+  padding: 1.5vh 2vw;
+  margin: 1.5vh 2vw;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.5s;
+}
+
+.task>div {
+  width: 100%;
+  color:rgba(0, 0, 0, 0.8);
+}
+
+.task p {
+  font-weight: bold;
+}
+
+.delete {
+  background-color: crimson;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.delete:hover {
+  background-color: red;
+  box-shadow: 2px 2px 3px rgba(0,0,0, 0.5);
+}
